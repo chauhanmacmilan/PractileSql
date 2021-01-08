@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShowBook">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Name"
+                android:id="@+id/edit_book"
+                android:layout_margin="10dp"
+                />-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Name"
+                android:id="@+id/edit_auther"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Book"
+                android:layout_margin="10dp"
+                android:id="@+id/add_boo"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerVIewBook"/>
+            <!--<Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Book"
+                android:layout_margin="10dp"
+                android:id="@+id/show_book"
+                />-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/linear_pop"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book Name"
+                    android:id="@+id/edit_auther_update"
+                    android:layout_margin="10dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Book"
+                    android:layout_margin="10dp"
+                    android:id="@+id/update_auther"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Book"
+                    android:layout_margin="10dp"
+                    android:id="@+id/delete_auther"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
